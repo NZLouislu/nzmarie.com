@@ -34,7 +34,7 @@ export default function Contact() {
           name: formData.name,
           email: formData.email,
           subject: `${formData.subject} - Website Development Test`,
-          message: `${formData.message}\n\n--- This is a test message for Marie's real estate website development ---\nTesting email functionality to nzmarie.com@gmail.com`,
+          message: `${formData.message}\n\n--- This is a test message for Marie's real estate website development ---\nTesting email functionality to marie@ssrealty.co.nz`,
         }),
       });
 
@@ -43,7 +43,7 @@ export default function Contact() {
       if (response.ok) {
         console.log("API Response:", result);
         alert(
-          `✅ Test Successful!\n\n${formData.name}, your test message has been submitted.\n\n📧 This is a website development test\n📍 Target email: nzmarie.com@gmail.com\n\nIn production environment, Marie will receive real email notifications.`
+          `✅ Test Successful!\n\n${formData.name}, your test message has been submitted.\n\n📧 This is a website development test\n📍 Target email: marie@ssrealty.co.nz\n\nIn production environment, Marie will receive real email notifications.`
         );
 
         // Reset form
@@ -66,10 +66,10 @@ export default function Contact() {
       const body = encodeURIComponent(
         `Hi Marie,\n\n${formData.message}\n\nBest regards,\n${formData.name}\nEmail: ${formData.email}`
       );
-      const mailtoLink = `mailto:nzmarie.com@gmail.com?subject=${subject}&body=${body}`;
+      const mailtoLink = `mailto:marie@ssrealty.co.nz?subject=${subject}&body=${body}`;
 
       alert(
-        `❌ Test Failed\n\nAutomatic sending encountered an issue.\n\n🔧 Alternative option:\nAfter clicking OK, an email client will open. You can send an email directly to Marie.\n\n📧 Target: nzmarie.com@gmail.com`
+        `❌ Test Failed\n\nAutomatic sending encountered an issue.\n\n🔧 Alternative option:\nAfter clicking OK, an email client will open. You can send an email directly to Marie.\n\n📧 Target: marie@ssrealty.co.nz`
       );
 
       window.open(mailtoLink, "_blank");
@@ -85,8 +85,6 @@ export default function Contact() {
               Contact Marie Nian - Real Estate Consultant
             </h1>
             <p className="text-lg text-gray-600">
-              📧 Test email function: Send to nzmarie.com@gmail.com
-              <br />
               Marie Nian, Licensed Real Estate Consultant, Southern Star Realty,
               New Zealand
             </p>

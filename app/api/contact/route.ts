@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
     // - Nodemailer with SMTP
 
     console.log("=== EMAIL SEND TEST ===");
-    console.log("To: nzmarie.com@gmail.com");
+    console.log("To: marie@ssrealty.co.nz");
     console.log("From:", name, "<" + email + ">");
     console.log("Subject:", subject, "- Website Development Test");
     console.log("Message:", message);
@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       message:
-        "Test email logged successfully. In production, this would send to nzmarie.com@gmail.com",
+        "Test email logged successfully. In production, this would send to marie@ssrealty.co.nz",
     });
   } catch (error) {
     console.error("Email API error:", error);
