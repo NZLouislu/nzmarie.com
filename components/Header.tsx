@@ -53,7 +53,7 @@ export default function Header() {
         <nav className="flex items-center justify-between py-4">
           <Link href="#home" aria-label="Go to home" className="navbar-brand">
             <Image
-              src="/img/logo.png"
+              src="/img/nzmarie-logo.png"
               alt="NZ Marie - Real Estate Consultant"
               width={120}
               height={40}
